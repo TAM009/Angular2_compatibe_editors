@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { QuillEditorModule } from 'ngx-quill-editor';
 import { AppComponent } from './app.component';
 import { EditorComponent } from './editor/editor.component';
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { EditorComponent } from './editor/editor.component';
   ],
   imports: [
     BrowserModule,
-    QuillEditorModule
+    QuillEditorModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
